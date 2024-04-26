@@ -1,18 +1,18 @@
 {
-  "name": "@sentry/capacitor",
+  "name": "sentry-capacitor-fork-latest-version-7",
   "homepage": "https://github.com/getsentry/sentry-capacitor",
   "repository": {
     "type": "git",
     "url": "https://github.com/getsentry/sentry-capacitor"
   },
-  "version": "0.17.0",
+  "version": "0.17.3",
   "description": "Official Sentry SDK for Capacitor",
   "types": "dist/esm/index.d.ts",
   "main": "dist/build/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
-    "build": "yarn run clean && yarn run lint && yarn run build:all",
-    "build:skiplint": "yarn run clean && yarn run build:all",
+    "build": "yarn run clean && yarn run build:all",
+    "build:lint": "yarn run clean && yarn run lint && yarn run build:all",
     "build:all": "yarn run build:esm && yarn run build:es5",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:es5": "tsc -p tsconfig.build.json",
@@ -42,7 +42,6 @@
   "license": "MIT",
   "peerDependencies": {
     "@capacitor/core": ">=3.0.0",
-    "@sentry/angular": "7.112.2",
     "@sentry/angular-ivy": "7.112.2",
     "@sentry/react": "7.112.2",
     "@sentry/vue": "7.112.2"
@@ -95,7 +94,7 @@
     "dist/",
     "ios/",
     "android/",
-    "SentryCapacitor.podspec",
+    "SentryCapacitorForkLatestVersion7.podspec",
     "scripts/check-siblings.js"
   ],
   "capacitor": {
