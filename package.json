@@ -12,6 +12,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "build": "yarn run clean && yarn run lint && yarn run build:all",
+    "build:skiplint": "yarn run clean && yarn run build:all",
     "build:all": "yarn run build:esm && yarn run build:es5",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:es5": "tsc -p tsconfig.build.json",
@@ -41,10 +42,10 @@
   "license": "MIT",
   "peerDependencies": {
     "@capacitor/core": ">=3.0.0",
-    "@sentry/angular": "7.93.0",
-    "@sentry/angular-ivy": "7.93.0",
-    "@sentry/react": "7.93.0",
-    "@sentry/vue": "7.93.0"
+    "@sentry/angular": "7.112.2",
+    "@sentry/angular-ivy": "7.112.2",
+    "@sentry/react": "7.112.2",
+    "@sentry/vue": "7.112.2"
   },
   "peerDependenciesMeta": {
     "@sentry/angular-ivy": {
@@ -61,23 +62,24 @@
     }
   },
   "dependencies": {
-    "@sentry/browser": "7.93.0",
-    "@sentry/core": "7.93.0",
-    "@sentry/hub": "7.93.0",
-    "@sentry/integrations": "7.93.0",
-    "@sentry/tracing": "7.93.0",
-    "@sentry/types": "7.93.0",
-    "@sentry/utils": "7.93.0"
+    "@sentry/browser": "7.112.2",
+    "@sentry/core": "7.112.2",
+    "@sentry/hub": "7.112.2",
+    "@sentry/integrations": "7.112.2",
+    "@sentry/tracing": "7.112.2",
+    "@sentry/types": "7.112.2",
+    "@sentry/utils": "7.112.2",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.1 || ^4.0.0 || ^5.0.0",
     "@capacitor/core": "^3.0.1 || ^4.0.0 || ^5.0.0",
     "@capacitor/ios": "^3.0.1 || ^4.0.0 || ^5.0.0",
     "@ionic/prettier-config": "^1.0.0",
-    "@sentry-internal/eslint-config-sdk": "7.93.0",
-    "@sentry-internal/eslint-plugin-sdk": "7.93.0",
-    "@sentry-internal/typescript": "7.93.0",
-    "@sentry/wizard": "3.21.0",
+    "@sentry-internal/eslint-config-sdk": "7.112.2",
+    "@sentry-internal/eslint-plugin-sdk": "7.112.2",
+    "@sentry-internal/typescript": "7.112.2",
+    "@sentry/wizard": "3.22.1",
     "@types/jest": "^26.0.15",
     "eslint": "^7.13.0",
     "jest": "^26.6.3",
